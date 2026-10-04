@@ -1,0 +1,26 @@
+semantic_models:
+  - name: subscription_events
+    model: ref('fct_subscription_events')
+    defaults:
+      agg_time_dimension: snapshot_month
+    entities:
+      - name: customer
+        type: foreign
+        expr: customer_id
+      - name: subscription
+        type: primary
+        expr: sub_id
+    dimensions:
+      - name: snapshot_month
+        type: time
+        type_params:
+          time_granularity: month
+      - name: plan_name
+        type: categorical
+    measures:
+      - name: mrr_amount
+        expr: mrr_amount
+        agg: sum
+      - name: active_subscriber_count
+        expr: customer_id
+        agg: count_distinct

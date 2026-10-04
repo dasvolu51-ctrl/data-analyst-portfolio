@@ -1,0 +1,12 @@
+# Data files
+*.parquet
+*.csv
+*.duckdb
+data/
+
+# Environments
+.venv/
+__pycache__/
+
+# Node
+node_modules/

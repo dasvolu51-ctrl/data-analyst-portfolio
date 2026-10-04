@@ -1,0 +1,15 @@
+semantic_models:
+  - name: metricflow_time_spine
+    description: "Time spine table for MetricFlow semantic resolution"
+    model: ref('metricflow_time_spine')
+    defaults:
+      agg_time_dimension: date_day
+    entities:
+      - name: time_spine_key
+        type: primary
+        expr: date_day
+    dimensions:
+      - name: date_day
+        type: time
+        type_params:
+          time_granularity: day

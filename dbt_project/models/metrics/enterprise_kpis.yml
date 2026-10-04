@@ -1,0 +1,11 @@
+metrics:
+  - name: mrr
+    description: "Monthly Recurring Revenue"
+    type: simple
+    type_params:
+      measure: mrr_amount
+  - name: active_subscribers
+    description: "Count of distinct active subscribers"
+    type: simple
+    type_params:
+      measure: active_subscriber_count

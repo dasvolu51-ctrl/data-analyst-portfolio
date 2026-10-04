@@ -1,0 +1,889 @@
+[0m18:07:01.271416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022218AA67B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022216679450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B437C50>]}
+
+
+============================== 18:07:01.277321 | ffd362c9-3837-40d4-90e3-fd1b21bc5ea3 ==============================
+[0m18:07:01.277321 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:07:01.277971 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt deps --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Public\\data_analyst_portfolio\\stars_schema\\logs'}
+[0m18:07:01.547696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ffd362c9-3837-40d4-90e3-fd1b21bc5ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B26BBB0>]}
+[0m18:07:01.601392 [debug] [MainThread]: Set downloads directory='C:\Users\dasvo\AppData\Local\Temp\dbt-downloads-et4srdyz'
+[0m18:07:01.602052 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m18:07:01.937659 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m18:07:01.939575 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m18:07:02.106513 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m18:07:02.108705 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m18:07:02.109213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ffd362c9-3837-40d4-90e3-fd1b21bc5ea3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022219713130>]}
+[0m18:07:02.114575 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m18:07:02.275880 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m18:07:02.288244 [info ] [MainThread]: Updating lock file in file path: C:\Users\Public\data_analyst_portfolio\stars_schema/package-lock.yml
+[0m18:07:02.299692 [debug] [MainThread]: Set downloads directory='C:\Users\dasvo\AppData\Local\Temp\dbt-downloads-9xri2iqa'
+[0m18:07:02.304184 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m18:07:03.356843 [info ] [MainThread]: Installed from version 0.10.4
+[0m18:07:03.357330 [info ] [MainThread]: Up to date!
+[0m18:07:03.357821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ffd362c9-3837-40d4-90e3-fd1b21bc5ea3', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B747950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B747C50>]}
+[0m18:07:03.358280 [info ] [MainThread]: Installing calogica/dbt_date
+[0m18:07:03.908708 [info ] [MainThread]: Installed from version 0.10.1
+[0m18:07:03.909373 [info ] [MainThread]: Up to date!
+[0m18:07:03.910011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ffd362c9-3837-40d4-90e3-fd1b21bc5ea3', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B4B6F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B73FD90>]}
+[0m18:07:03.913447 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:07:03.915694 [debug] [MainThread]: Command `dbt deps` succeeded at 18:07:03.915250 after 2.80 seconds
+[0m18:07:03.916678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022219858EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B71A210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002221B719F10>]}
+[0m18:07:03.917614 [debug] [MainThread]: Flushing usage events
+[0m18:07:04.944942 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:07:09.168515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280767467B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280742E9450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028079133C50>]}
+
+
+============================== 18:07:09.174109 | c14c4019-7706-4ee2-8fe1-359a32553ad0 ==============================
+[0m18:07:09.174109 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:07:09.174816 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Public\\data_analyst_portfolio\\stars_schema\\logs'}
+[0m18:07:09.558443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c14c4019-7706-4ee2-8fe1-359a32553ad0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280790BB360>]}
+[0m18:07:09.629115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c14c4019-7706-4ee2-8fe1-359a32553ad0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028079223460>]}
+[0m18:07:09.632308 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m18:07:10.190974 [debug] [MainThread]: checksum: 6372d7335fbf758153a9a531c77b327af178a126b0b5400c6cf6c0890ca02da7, vars: {}, profile: saas_metrics, target: dev, version: 1.12.5
+[0m18:07:10.192378 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:07:10.192825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c14c4019-7706-4ee2-8fe1-359a32553ad0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028079269050>]}
+[0m18:07:14.176003 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'fct_subscription_events' in package 'saas_metrics' (models\marts\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:07:14.176534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c14c4019-7706-4ee2-8fe1-359a32553ad0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002807915BB60>]}
+[0m18:07:14.437312 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m18:07:14.438207 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:07:14.439579 [debug] [MainThread]: Command `dbt build` failed at 18:07:14.439373 after 5.59 seconds
+[0m18:07:14.440183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028078F7B850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028079ACDC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028078F3A4E0>]}
+[0m18:07:14.440743 [debug] [MainThread]: Flushing usage events
+[0m18:07:15.452574 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:07:51.191306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C73EEB67B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C73CA49450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7418A3C50>]}
+
+
+============================== 18:07:51.195823 | 4abf0eca-d4c4-44df-93b5-c4da75569cf7 ==============================
+[0m18:07:51.195823 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:07:51.196519 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build --profiles-dir .', 'log_path': 'C:\\Users\\Public\\data_analyst_portfolio\\stars_schema\\logs'}
+[0m18:07:51.487215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4abf0eca-d4c4-44df-93b5-c4da75569cf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C74182F360>]}
+[0m18:07:51.561570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4abf0eca-d4c4-44df-93b5-c4da75569cf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C741993460>]}
+[0m18:07:51.564713 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m18:07:51.828822 [debug] [MainThread]: checksum: 6372d7335fbf758153a9a531c77b327af178a126b0b5400c6cf6c0890ca02da7, vars: {}, profile: saas_metrics, target: dev, version: 1.12.5
+[0m18:07:51.830193 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:07:51.830671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4abf0eca-d4c4-44df-93b5-c4da75569cf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7419D9050>]}
+[0m18:07:53.727894 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'fct_subscription_events' in package 'saas_metrics' (models\marts\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:07:53.728542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4abf0eca-d4c4-44df-93b5-c4da75569cf7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C73E7E48C0>]}
+[0m18:07:54.012201 [error] [MainThread]: [[33mWARNING[0m]: The semantic model metricflow_time_spine contains dimensions, but it does not define a primary entity. Either add an entity with type PRIMARY or set a value for the primary_entity key.
+[0m18:07:54.012851 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Semantic Manifest validation failed.
+[0m18:07:54.013552 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:07:54.014702 [debug] [MainThread]: Command `dbt build` failed at 18:07:54.014499 after 2.97 seconds
+[0m18:07:54.015241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7416EB850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7435409F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7416AA4E0>]}
+[0m18:07:54.015712 [debug] [MainThread]: Flushing usage events
+[0m18:07:55.063052 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:18.023637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F51C827B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F4F819450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F54673C50>]}
+
+
+============================== 18:08:18.028205 | f288932b-2ee7-4e6b-bb8e-9324ee0b1d55 ==============================
+[0m18:08:18.028205 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:08:18.028763 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Public\\data_analyst_portfolio\\stars_schema\\logs'}
+[0m18:08:18.314550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f288932b-2ee7-4e6b-bb8e-9324ee0b1d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F545FB360>]}
+[0m18:08:18.387768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f288932b-2ee7-4e6b-bb8e-9324ee0b1d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F54763460>]}
+[0m18:08:18.390607 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m18:08:18.643205 [debug] [MainThread]: checksum: 6372d7335fbf758153a9a531c77b327af178a126b0b5400c6cf6c0890ca02da7, vars: {}, profile: saas_metrics, target: dev, version: 1.12.5
+[0m18:08:18.645380 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:08:18.646050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f288932b-2ee7-4e6b-bb8e-9324ee0b1d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F547A9050>]}
+[0m18:08:20.659931 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test
+`dbt_expectations.expect_column_values_to_be_between` defined on
+'fct_subscription_events' in package 'saas_metrics' (models\marts\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:08:20.660633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f288932b-2ee7-4e6b-bb8e-9324ee0b1d55', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F56236300>]}
+[0m18:08:20.925468 [error] [MainThread]: [[33mWARNING[0m]: In semantic models {'metricflow_time_spine'}, element `date_day` is of type SemanticModelElementType.DIMENSION, but it is used as types [<SemanticModelElementType.DIMENSION: 'dimension'>, <SemanticModelElementType.ENTITY: 'entity'>] across the model.
+[0m18:08:20.926081 [error] [MainThread]: [[33mWARNING[0m]: In semantic models {'metricflow_time_spine'}, element `date_day` is of type SemanticModelElementType.ENTITY, but it is used as types [<SemanticModelElementType.DIMENSION: 'dimension'>, <SemanticModelElementType.ENTITY: 'entity'>] across the model.
+[0m18:08:20.926848 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Semantic Manifest validation failed.
+[0m18:08:20.927710 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:08:20.929497 [debug] [MainThread]: Command `dbt build` failed at 18:08:20.929215 after 3.06 seconds
+[0m18:08:20.930063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F544BB850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F563951D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F5447A4E0>]}
+[0m18:08:20.930579 [debug] [MainThread]: Flushing usage events
+[0m18:08:21.953276 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:43.082016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFD3967B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFAF29450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFD7FC50>]}
+
+
+============================== 18:08:43.086552 | 47978ea8-ad27-4c56-adb6-e4fcba1a9cc6 ==============================
+[0m18:08:43.086552 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:08:43.087201 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Public\\data_analyst_portfolio\\stars_schema\\logs'}
+[0m18:08:43.404374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFD0B360>]}
+[0m18:08:43.479875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFE73460>]}
+[0m18:08:43.483128 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m18:08:43.750422 [debug] [MainThread]: checksum: 6372d7335fbf758153a9a531c77b327af178a126b0b5400c6cf6c0890ca02da7, vars: {}, profile: saas_metrics, target: dev, version: 1.12.5
+[0m18:08:43.751668 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:08:43.752128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFEB9050>]}
+[0m18:08:46.070055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D80742A80>]}
+[0m18:08:46.227636 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Public\data_analyst_portfolio\stars_schema\target\manifest.json
+[0m18:08:46.233235 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Public\data_analyst_portfolio\stars_schema\target\semantic_manifest.json
+[0m18:08:46.287628 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Public\data_analyst_portfolio\stars_schema\target\osi_document.json
+[0m18:08:46.336986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D81C18D70>]}
+[0m18:08:46.337534 [info ] [MainThread]: Found 9 models, 4 data tests, 2 metrics, 767 macros, 2 semantic models
+[0m18:08:46.341095 [info ] [MainThread]: 
+[0m18:08:46.341622 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:08:46.342022 [info ] [MainThread]: 
+[0m18:08:46.343096 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:08:46.349192 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_metrics'
+[0m18:08:48.344484 [debug] [ThreadPool]: Using duckdb connection "list_saas_metrics"
+[0m18:08:48.344878 [debug] [ThreadPool]: On list_saas_metrics: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "connection_name": "list_saas_metrics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"saas_metrics"'
+    
+  
+  
+[0m18:08:48.345216 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:08:48.367363 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m18:08:48.369313 [debug] [ThreadPool]: On list_saas_metrics: Close
+[0m18:08:48.370327 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_saas_metrics, now create_saas_metrics_main)
+[0m18:08:48.370917 [debug] [ThreadPool]: Creating schema "database: "saas_metrics"
+schema: "main"
+"
+[0m18:08:48.378820 [debug] [ThreadPool]: Using duckdb connection "create_saas_metrics_main"
+[0m18:08:48.379226 [debug] [ThreadPool]: On create_saas_metrics_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "connection_name": "create_saas_metrics_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='saas_metrics'
+        and type != 'duckdb'
+    
+  
+[0m18:08:48.379495 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:08:48.380885 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m18:08:48.382295 [debug] [ThreadPool]: Using duckdb connection "create_saas_metrics_main"
+[0m18:08:48.382686 [debug] [ThreadPool]: On create_saas_metrics_main: BEGIN
+[0m18:08:48.383337 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:08:48.383763 [debug] [ThreadPool]: Using duckdb connection "create_saas_metrics_main"
+[0m18:08:48.384041 [debug] [ThreadPool]: On create_saas_metrics_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "connection_name": "create_saas_metrics_main"} */
+
+    
+    
+        create schema if not exists "saas_metrics"."main"
+    
+[0m18:08:48.384905 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m18:08:48.385785 [debug] [ThreadPool]: On create_saas_metrics_main: COMMIT
+[0m18:08:48.386124 [debug] [ThreadPool]: Using duckdb connection "create_saas_metrics_main"
+[0m18:08:48.386454 [debug] [ThreadPool]: On create_saas_metrics_main: COMMIT
+[0m18:08:48.387070 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:08:48.387562 [debug] [ThreadPool]: On create_saas_metrics_main: Close
+[0m18:08:48.389962 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_metrics_main'
+[0m18:08:48.394923 [debug] [ThreadPool]: Using duckdb connection "list_saas_metrics_main"
+[0m18:08:48.395305 [debug] [ThreadPool]: On list_saas_metrics_main: BEGIN
+[0m18:08:48.395547 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:08:48.396156 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m18:08:48.396503 [debug] [ThreadPool]: Using duckdb connection "list_saas_metrics_main"
+[0m18:08:48.396771 [debug] [ThreadPool]: On list_saas_metrics_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "connection_name": "list_saas_metrics_main"} */
+select
+      'saas_metrics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'saas_metrics'
+  
+[0m18:08:48.402700 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:08:48.404080 [debug] [ThreadPool]: On list_saas_metrics_main: ROLLBACK
+[0m18:08:48.405055 [debug] [ThreadPool]: On list_saas_metrics_main: Close
+[0m18:08:48.406105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D81ECA8F0>]}
+[0m18:08:48.406630 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:48.406931 [debug] [MainThread]: On master: BEGIN
+[0m18:08:48.407176 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:08:48.407759 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m18:08:48.408093 [debug] [MainThread]: On master: COMMIT
+[0m18:08:48.408343 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:48.408579 [debug] [MainThread]: On master: COMMIT
+[0m18:08:48.409098 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:08:48.409418 [debug] [MainThread]: On master: Close
+[0m18:08:48.414203 [debug] [Thread-2 (]: Began running node model.saas_metrics.stg_billing
+[0m18:08:48.414664 [debug] [Thread-3 (]: Began running node model.saas_metrics.stg_customers
+[0m18:08:48.414998 [debug] [Thread-4 (]: Began running node model.saas_metrics.stg_subscriptions
+[0m18:08:48.415308 [debug] [Thread-1 (]: Began running node model.saas_metrics.metricflow_time_spine
+[0m18:08:48.415839 [info ] [Thread-2 (]: 2 of 13 START sql view model main.stg_billing .................................. [RUN]
+[0m18:08:48.416800 [info ] [Thread-3 (]: 3 of 13 START sql view model main.stg_customers ................................ [RUN]
+[0m18:08:48.417826 [info ] [Thread-4 (]: 4 of 13 START sql view model main.stg_subscriptions ............................ [RUN]
+[0m18:08:48.418786 [info ] [Thread-1 (]: 1 of 13 START sql table model main.metricflow_time_spine ....................... [RUN]
+[0m18:08:48.419934 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.saas_metrics.stg_billing'
+[0m18:08:48.420822 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.saas_metrics.stg_customers'
+[0m18:08:48.421586 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.saas_metrics.stg_subscriptions'
+[0m18:08:48.422276 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.saas_metrics.metricflow_time_spine'
+[0m18:08:48.422799 [debug] [Thread-2 (]: Began compiling node model.saas_metrics.stg_billing
+[0m18:08:48.430420 [debug] [Thread-2 (]: Writing injected SQL for node "model.saas_metrics.stg_billing"
+[0m18:08:48.423888 [debug] [Thread-4 (]: Began compiling node model.saas_metrics.stg_subscriptions
+[0m18:08:48.424238 [debug] [Thread-1 (]: Began compiling node model.saas_metrics.metricflow_time_spine
+[0m18:08:48.423421 [debug] [Thread-3 (]: Began compiling node model.saas_metrics.stg_customers
+[0m18:08:48.431898 [debug] [Thread-4 (]: Writing injected SQL for node "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.434765 [debug] [Thread-1 (]: Writing injected SQL for node "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.436172 [debug] [Thread-3 (]: Writing injected SQL for node "model.saas_metrics.stg_customers"
+[0m18:08:48.441196 [debug] [Thread-1 (]: Began executing node model.saas_metrics.metricflow_time_spine
+[0m18:08:48.441998 [debug] [Thread-4 (]: Began executing node model.saas_metrics.stg_subscriptions
+[0m18:08:48.497553 [debug] [Thread-1 (]: Writing runtime sql for node "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.497999 [debug] [Thread-3 (]: Began executing node model.saas_metrics.stg_customers
+[0m18:08:48.524846 [debug] [Thread-3 (]: Writing runtime sql for node "model.saas_metrics.stg_customers"
+[0m18:08:48.521910 [debug] [Thread-4 (]: Writing runtime sql for node "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.525322 [debug] [Thread-2 (]: Began executing node model.saas_metrics.stg_billing
+[0m18:08:48.528475 [debug] [Thread-2 (]: Writing runtime sql for node "model.saas_metrics.stg_billing"
+[0m18:08:48.532693 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_billing"
+[0m18:08:48.533462 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: BEGIN
+[0m18:08:48.534155 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:08:48.534887 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.535445 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.stg_customers"
+[0m18:08:48.535979 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.537181 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: BEGIN
+[0m18:08:48.537779 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m18:08:48.538297 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: BEGIN
+[0m18:08:48.540112 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:08:48.539392 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:08:48.539773 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_billing"
+[0m18:08:48.538974 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: BEGIN
+[0m18:08:48.541574 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:08:48.541254 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.542390 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.stg_customers"
+[0m18:08:48.540829 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_billing"} */
+
+  
+  create view "saas_metrics"."main"."stg_billing__dbt_tmp" as (
+    SELECT * FROM read_parquet('C:/Users/Public/data_analyst_portfolio/clean_data/billing_clean.parquet')
+  );
+
+[0m18:08:48.541902 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.543933 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.544362 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_subscriptions"} */
+
+  
+  create view "saas_metrics"."main"."stg_subscriptions__dbt_tmp" as (
+    SELECT * FROM read_parquet('C:/Users/Public/data_analyst_portfolio/clean_data/subscriptions_clean.parquet')
+  );
+
+[0m18:08:48.542745 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_customers"} */
+
+  
+  create view "saas_metrics"."main"."stg_customers__dbt_tmp" as (
+    SELECT * FROM read_parquet('C:/Users/Public/data_analyst_portfolio/clean_data/customers_clean.parquet')
+  );
+
+[0m18:08:48.543094 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.545095 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.546041 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.metricflow_time_spine"} */
+
+    
+
+    create  table
+      "saas_metrics"."main"."metricflow_time_spine__dbt_tmp"
+  
+    
+    as (
+      
+
+select CAST(range AS DATE) as date_day
+from range(DATE '2020-01-01', DATE '2030-01-01', INTERVAL 1 DAY)
+    );
+    
+  
+[0m18:08:48.546613 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.553329 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.545610 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.547021 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.553882 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_subscriptions"} */
+alter view "saas_metrics"."main"."stg_subscriptions__dbt_tmp" rename to "stg_subscriptions"
+[0m18:08:48.554335 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m18:08:48.556477 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_billing"
+[0m18:08:48.558671 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.stg_customers"
+[0m18:08:48.562962 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_customers"} */
+alter view "saas_metrics"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m18:08:48.562129 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_billing"} */
+alter view "saas_metrics"."main"."stg_billing__dbt_tmp" rename to "stg_billing"
+[0m18:08:48.562549 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.561673 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.577908 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.metricflow_time_spine"} */
+alter table "saas_metrics"."main"."metricflow_time_spine__dbt_tmp" rename to "metricflow_time_spine"
+[0m18:08:48.577413 [debug] [Thread-3 (]: SQL status: OK in 0.014 seconds
+[0m18:08:48.576823 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: COMMIT
+[0m18:08:48.578406 [debug] [Thread-2 (]: SQL status: OK in 0.015 seconds
+[0m18:08:48.582786 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: COMMIT
+[0m18:08:48.580345 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.580740 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.579823 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: COMMIT
+[0m18:08:48.583346 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_billing"
+[0m18:08:48.590098 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: COMMIT
+[0m18:08:48.589448 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: COMMIT
+[0m18:08:48.589782 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.stg_customers"
+[0m18:08:48.588991 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: COMMIT
+[0m18:08:48.591460 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.592030 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: COMMIT
+[0m18:08:48.590801 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: COMMIT
+[0m18:08:48.593573 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.599335 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_billing"
+[0m18:08:48.600536 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_billing"} */
+
+      drop view if exists "saas_metrics"."main"."stg_billing__dbt_backup" cascade
+    
+[0m18:08:48.601120 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m18:08:48.604174 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.metricflow_time_spine"
+[0m18:08:48.599960 [debug] [Thread-4 (]: SQL status: OK in 0.009 seconds
+[0m18:08:48.601591 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m18:08:48.604578 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.metricflow_time_spine"} */
+
+      drop table if exists "saas_metrics"."main"."metricflow_time_spine__dbt_backup" cascade
+    
+[0m18:08:48.604931 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.606591 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.stg_subscriptions"
+[0m18:08:48.608597 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.stg_customers"
+[0m18:08:48.611183 [debug] [Thread-2 (]: On model.saas_metrics.stg_billing: Close
+[0m18:08:48.611743 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_subscriptions"} */
+
+      drop view if exists "saas_metrics"."main"."stg_subscriptions__dbt_backup" cascade
+    
+[0m18:08:48.612278 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.612734 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_customers"} */
+
+      drop view if exists "saas_metrics"."main"."stg_customers__dbt_backup" cascade
+    
+[0m18:08:48.617235 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.616258 [debug] [Thread-1 (]: On model.saas_metrics.metricflow_time_spine: Close
+[0m18:08:48.618866 [debug] [Thread-4 (]: On model.saas_metrics.stg_subscriptions: Close
+[0m18:08:48.619441 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.621847 [debug] [Thread-3 (]: On model.saas_metrics.stg_customers: Close
+[0m18:08:48.620543 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D81BD13D0>]}
+[0m18:08:48.622199 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D82035180>]}
+[0m18:08:48.622547 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFD8DD440>]}
+[0m18:08:48.623040 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820189B0>]}
+[0m18:08:48.623618 [info ] [Thread-2 (]: 2 of 13 OK created sql view model main.stg_billing ............................. [[32mOK[0m in 0.19s]
+[0m18:08:48.624217 [info ] [Thread-1 (]: 1 of 13 OK created sql table model main.metricflow_time_spine .................. [[32mOK[0m in 0.20s]
+[0m18:08:48.625051 [info ] [Thread-4 (]: 4 of 13 OK created sql view model main.stg_subscriptions ....................... [[32mOK[0m in 0.20s]
+[0m18:08:48.627244 [debug] [Thread-2 (]: Finished running node model.saas_metrics.stg_billing
+[0m18:08:48.629909 [debug] [Thread-2 (]: Began running node model.saas_metrics.stg_telemetry
+[0m18:08:48.626038 [info ] [Thread-3 (]: 3 of 13 OK created sql view model main.stg_customers ........................... [[32mOK[0m in 0.20s]
+[0m18:08:48.629315 [debug] [Thread-4 (]: Finished running node model.saas_metrics.stg_subscriptions
+[0m18:08:48.628311 [debug] [Thread-1 (]: Finished running node model.saas_metrics.metricflow_time_spine
+[0m18:08:48.630614 [info ] [Thread-2 (]: 5 of 13 START sql view model main.stg_telemetry ................................ [RUN]
+[0m18:08:48.631527 [debug] [Thread-3 (]: Finished running node model.saas_metrics.stg_customers
+[0m18:08:48.632803 [debug] [Thread-4 (]: Began running node model.saas_metrics.dim_plans
+[0m18:08:48.634789 [info ] [Thread-4 (]: 6 of 13 START sql table model main.dim_plans ................................... [RUN]
+[0m18:08:48.633897 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.saas_metrics.stg_billing, now model.saas_metrics.stg_telemetry)
+[0m18:08:48.635520 [debug] [Thread-3 (]: Began running node model.saas_metrics.dim_customers
+[0m18:08:48.636428 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.saas_metrics.stg_subscriptions, now model.saas_metrics.dim_plans)
+[0m18:08:48.633314 [debug] [Thread-1 (]: Began running node model.saas_metrics.fct_subscription_events
+[0m18:08:48.637428 [debug] [Thread-2 (]: Began compiling node model.saas_metrics.stg_telemetry
+[0m18:08:48.638381 [info ] [Thread-3 (]: 8 of 13 START sql table model main.dim_customers ............................... [RUN]
+[0m18:08:48.639291 [debug] [Thread-4 (]: Began compiling node model.saas_metrics.dim_plans
+[0m18:08:48.640020 [info ] [Thread-1 (]: 7 of 13 START sql table model main.fct_subscription_events ..................... [RUN]
+[0m18:08:48.641533 [debug] [Thread-2 (]: Writing injected SQL for node "model.saas_metrics.stg_telemetry"
+[0m18:08:48.642200 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.saas_metrics.stg_customers, now model.saas_metrics.dim_customers)
+[0m18:08:48.645689 [debug] [Thread-3 (]: Began compiling node model.saas_metrics.dim_customers
+[0m18:08:48.647704 [debug] [Thread-3 (]: Writing injected SQL for node "model.saas_metrics.dim_customers"
+[0m18:08:48.644456 [debug] [Thread-4 (]: Writing injected SQL for node "model.saas_metrics.dim_plans"
+[0m18:08:48.645122 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.saas_metrics.metricflow_time_spine, now model.saas_metrics.fct_subscription_events)
+[0m18:08:48.648459 [debug] [Thread-1 (]: Began compiling node model.saas_metrics.fct_subscription_events
+[0m18:08:48.651172 [debug] [Thread-1 (]: Writing injected SQL for node "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.652101 [debug] [Thread-2 (]: Began executing node model.saas_metrics.stg_telemetry
+[0m18:08:48.655957 [debug] [Thread-2 (]: Writing runtime sql for node "model.saas_metrics.stg_telemetry"
+[0m18:08:48.653197 [debug] [Thread-3 (]: Began executing node model.saas_metrics.dim_customers
+[0m18:08:48.652726 [debug] [Thread-4 (]: Began executing node model.saas_metrics.dim_plans
+[0m18:08:48.664009 [debug] [Thread-4 (]: Writing runtime sql for node "model.saas_metrics.dim_plans"
+[0m18:08:48.660390 [debug] [Thread-3 (]: Writing runtime sql for node "model.saas_metrics.dim_customers"
+[0m18:08:48.664721 [debug] [Thread-1 (]: Began executing node model.saas_metrics.fct_subscription_events
+[0m18:08:48.670143 [debug] [Thread-1 (]: Writing runtime sql for node "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.666034 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_telemetry"
+[0m18:08:48.670854 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: BEGIN
+[0m18:08:48.671303 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:08:48.672315 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.dim_plans"
+[0m18:08:48.673699 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: BEGIN
+[0m18:08:48.673094 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.dim_customers"
+[0m18:08:48.675090 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: BEGIN
+[0m18:08:48.675945 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:08:48.675517 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.674241 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.674657 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:08:48.676575 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: BEGIN
+[0m18:08:48.677908 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:48.677381 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.676992 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_telemetry"
+[0m18:08:48.679510 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_telemetry"} */
+
+  
+  create view "saas_metrics"."main"."stg_telemetry__dbt_tmp" as (
+    SELECT * FROM read_parquet('C:/Users/Public/data_analyst_portfolio/clean_data/telemetry_clean.parquet')
+  );
+
+[0m18:08:48.678807 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.dim_customers"
+[0m18:08:48.680066 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_customers"} */
+
+    
+
+    create  table
+      "saas_metrics"."main"."dim_customers__dbt_tmp"
+  
+    
+    as (
+      SELECT customer_id, email, country, signup_date, theme, lang 
+FROM "saas_metrics"."main"."stg_customers"
+    );
+    
+  
+[0m18:08:48.678406 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m18:08:48.679176 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.681157 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.681803 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.fct_subscription_events"} */
+
+    
+
+    create  table
+      "saas_metrics"."main"."fct_subscription_events__dbt_tmp"
+  
+    
+    as (
+      WITH monthly_billing AS (
+    SELECT 
+        sub_id, 
+        DATE_TRUNC('month', billing_date) AS billing_month,
+        SUM(amount) AS mrr_amount
+    FROM "saas_metrics"."main"."stg_billing"
+    WHERE payment_status = 'Paid'
+    GROUP BY 1, 2
+)
+SELECT 
+    s.customer_id,
+    s.sub_id,
+    b.billing_month AS snapshot_month,
+    s.plan_name,
+    s.status AS current_status,
+    b.mrr_amount
+FROM "saas_metrics"."main"."stg_subscriptions" s
+JOIN monthly_billing b ON s.sub_id = b.sub_id
+    );
+    
+  
+[0m18:08:48.684736 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m18:08:48.694172 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_telemetry"
+[0m18:08:48.680667 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.dim_plans"
+[0m18:08:48.719967 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_plans"} */
+
+    
+
+    create  table
+      "saas_metrics"."main"."dim_plans__dbt_tmp"
+  
+    
+    as (
+      SELECT DISTINCT plan_name 
+FROM "saas_metrics"."main"."stg_subscriptions"
+WHERE plan_name IS NOT NULL
+    );
+    
+  
+[0m18:08:48.695190 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_telemetry"} */
+alter view "saas_metrics"."main"."stg_telemetry__dbt_tmp" rename to "stg_telemetry"
+[0m18:08:48.722041 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.724330 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: COMMIT
+[0m18:08:48.725088 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_telemetry"
+[0m18:08:48.725817 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: COMMIT
+[0m18:08:48.727692 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.730997 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.stg_telemetry"
+[0m18:08:48.731685 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.stg_telemetry"} */
+
+      drop view if exists "saas_metrics"."main"."stg_telemetry__dbt_backup" cascade
+    
+[0m18:08:48.732895 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m18:08:48.734965 [debug] [Thread-2 (]: On model.saas_metrics.stg_telemetry: Close
+[0m18:08:48.736221 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D81FD4DE0>]}
+[0m18:08:48.737651 [info ] [Thread-2 (]: 5 of 13 OK created sql view model main.stg_telemetry ........................... [[32mOK[0m in 0.10s]
+[0m18:08:48.740070 [debug] [Thread-2 (]: Finished running node model.saas_metrics.stg_telemetry
+[0m18:08:48.741937 [debug] [Thread-2 (]: Began running node model.saas_metrics.dim_feature_usage
+[0m18:08:48.742876 [info ] [Thread-2 (]: 9 of 13 START sql table model main.dim_feature_usage ........................... [RUN]
+[0m18:08:48.744007 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.saas_metrics.stg_telemetry, now model.saas_metrics.dim_feature_usage)
+[0m18:08:48.744815 [debug] [Thread-2 (]: Began compiling node model.saas_metrics.dim_feature_usage
+[0m18:08:48.747883 [debug] [Thread-2 (]: Writing injected SQL for node "model.saas_metrics.dim_feature_usage"
+[0m18:08:48.749596 [debug] [Thread-2 (]: Began executing node model.saas_metrics.dim_feature_usage
+[0m18:08:48.753900 [debug] [Thread-2 (]: Writing runtime sql for node "model.saas_metrics.dim_feature_usage"
+[0m18:08:48.756130 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.dim_feature_usage"
+[0m18:08:48.756929 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: BEGIN
+[0m18:08:48.757549 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:08:48.758649 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.759333 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.dim_feature_usage"
+[0m18:08:48.759953 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_feature_usage"} */
+
+    
+
+    create  table
+      "saas_metrics"."main"."dim_feature_usage__dbt_tmp"
+  
+    
+    as (
+      SELECT 
+    customer_id, 
+    COUNT(event_id) as total_events, 
+    SUM(session_length_sec) as total_session_time 
+FROM "saas_metrics"."main"."stg_telemetry" 
+GROUP BY customer_id
+    );
+    
+  
+[0m18:08:48.762006 [debug] [Thread-4 (]: SQL status: OK in 0.041 seconds
+[0m18:08:48.765672 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.dim_plans"
+[0m18:08:48.766563 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_plans"} */
+alter table "saas_metrics"."main"."dim_plans__dbt_tmp" rename to "dim_plans"
+[0m18:08:48.768090 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.771006 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: COMMIT
+[0m18:08:48.771929 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.dim_plans"
+[0m18:08:48.772677 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: COMMIT
+[0m18:08:48.775346 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.778819 [debug] [Thread-4 (]: Using duckdb connection "model.saas_metrics.dim_plans"
+[0m18:08:48.779577 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_plans"} */
+
+      drop table if exists "saas_metrics"."main"."dim_plans__dbt_backup" cascade
+    
+[0m18:08:48.780833 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.783290 [debug] [Thread-4 (]: On model.saas_metrics.dim_plans: Close
+[0m18:08:48.784481 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820E5F10>]}
+[0m18:08:48.785584 [info ] [Thread-4 (]: 6 of 13 OK created sql table model main.dim_plans .............................. [[32mOK[0m in 0.15s]
+[0m18:08:48.786872 [debug] [Thread-4 (]: Finished running node model.saas_metrics.dim_plans
+[0m18:08:48.788907 [debug] [Thread-1 (]: SQL status: OK in 0.106 seconds
+[0m18:08:48.793059 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.793890 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.fct_subscription_events"} */
+alter table "saas_metrics"."main"."fct_subscription_events__dbt_tmp" rename to "fct_subscription_events"
+[0m18:08:48.795275 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.822024 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: COMMIT
+[0m18:08:48.822986 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.823918 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: COMMIT
+[0m18:08:48.826274 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.830044 [debug] [Thread-1 (]: Using duckdb connection "model.saas_metrics.fct_subscription_events"
+[0m18:08:48.830919 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.fct_subscription_events"} */
+
+      drop table if exists "saas_metrics"."main"."fct_subscription_events__dbt_backup" cascade
+    
+[0m18:08:48.832647 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.835268 [debug] [Thread-1 (]: On model.saas_metrics.fct_subscription_events: Close
+[0m18:08:48.836454 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820E6F30>]}
+[0m18:08:48.837710 [info ] [Thread-1 (]: 7 of 13 OK created sql table model main.fct_subscription_events ................ [[32mOK[0m in 0.19s]
+[0m18:08:48.838907 [debug] [Thread-1 (]: Finished running node model.saas_metrics.fct_subscription_events
+[0m18:08:48.841189 [debug] [Thread-1 (]: Began running node test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645
+[0m18:08:48.842024 [info ] [Thread-1 (]: 11 of 13 START test not_null_fct_subscription_events_customer_id ............... [RUN]
+[0m18:08:48.842982 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.saas_metrics.fct_subscription_events, now test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645)
+[0m18:08:48.843844 [debug] [Thread-1 (]: Began compiling node test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645
+[0m18:08:48.873503 [debug] [Thread-4 (]: Began running node test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37
+[0m18:08:48.877327 [debug] [Thread-1 (]: Writing injected SQL for node "test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645"
+[0m18:08:48.878072 [info ] [Thread-4 (]: 10 of 13 START test dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0  [RUN]
+[0m18:08:48.879090 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.saas_metrics.dim_plans, now test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37)
+[0m18:08:48.879926 [debug] [Thread-4 (]: Began compiling node test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37
+[0m18:08:48.891236 [debug] [Thread-4 (]: Writing injected SQL for node "test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37"
+[0m18:08:48.892388 [debug] [Thread-1 (]: Began executing node test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645
+[0m18:08:48.943760 [debug] [Thread-4 (]: Began executing node test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37
+[0m18:08:48.951688 [debug] [Thread-4 (]: Writing runtime sql for node "test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37"
+[0m18:08:48.947937 [debug] [Thread-1 (]: Writing runtime sql for node "test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645"
+[0m18:08:48.954488 [debug] [Thread-4 (]: Using duckdb connection "test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37"
+[0m18:08:48.955218 [debug] [Thread-4 (]: On test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37: BEGIN
+[0m18:08:48.956848 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:08:48.955965 [debug] [Thread-1 (]: Using duckdb connection "test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645"
+[0m18:08:48.957818 [debug] [Thread-1 (]: On test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645: BEGIN
+[0m18:08:48.958535 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:48.959177 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m18:08:48.960134 [debug] [Thread-4 (]: Using duckdb connection "test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37"
+[0m18:08:48.960769 [debug] [Thread-4 (]: On test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+
+    with grouped_expression as (
+    select
+        
+        
+    
+  
+( 1=1 and mrr_amount >= 0 and mrr_amount <= 100000
+)
+ as expression
+
+
+    from "saas_metrics"."main"."fct_subscription_events"
+    
+
+),
+validation_errors as (
+
+    select
+        *
+    from
+        grouped_expression
+    where
+        not(expression = true)
+
+)
+
+select *
+from validation_errors
+
+
+
+
+
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:08:48.961662 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.962275 [debug] [Thread-1 (]: Using duckdb connection "test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645"
+[0m18:08:48.962949 [debug] [Thread-1 (]: On test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "saas_metrics"."main"."fct_subscription_events"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:08:48.964098 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m18:08:48.965324 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:48.993197 [debug] [Thread-4 (]: On test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37: ROLLBACK
+[0m18:08:48.994257 [debug] [Thread-4 (]: On test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37: Close
+[0m18:08:48.995491 [info ] [Thread-4 (]: 10 of 13 PASS dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0  [[32mPASS[0m in 0.12s]
+[0m18:08:48.996790 [debug] [Thread-4 (]: Finished running node test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37
+[0m18:08:48.997680 [debug] [Thread-4 (]: Began running node test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4
+[0m18:08:49.001459 [debug] [Thread-1 (]: On test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645: ROLLBACK
+[0m18:08:49.002697 [debug] [Thread-1 (]: On test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645: Close
+[0m18:08:48.998614 [info ] [Thread-4 (]: 12 of 13 START test not_null_fct_subscription_events_mrr_amount ................ [RUN]
+[0m18:08:49.005283 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.saas_metrics.dbt_expectations_expect_column_values_to_be_between_fct_subscription_events_mrr_amount__100000__0.116c53ad37, now test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4)
+[0m18:08:49.006517 [debug] [Thread-4 (]: Began compiling node test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4
+[0m18:08:49.023361 [debug] [Thread-4 (]: Writing injected SQL for node "test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4"
+[0m18:08:49.003897 [info ] [Thread-1 (]: 11 of 13 PASS not_null_fct_subscription_events_customer_id ..................... [[32mPASS[0m in 0.16s]
+[0m18:08:49.026234 [debug] [Thread-1 (]: Finished running node test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645
+[0m18:08:49.048207 [debug] [Thread-4 (]: Began executing node test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4
+[0m18:08:49.052161 [debug] [Thread-4 (]: Writing runtime sql for node "test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4"
+[0m18:08:49.056340 [debug] [Thread-4 (]: Using duckdb connection "test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4"
+[0m18:08:49.057431 [debug] [Thread-4 (]: On test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4: BEGIN
+[0m18:08:49.058375 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:08:49.061270 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m18:08:49.062559 [debug] [Thread-4 (]: Using duckdb connection "test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4"
+[0m18:08:49.063633 [debug] [Thread-4 (]: On test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select mrr_amount
+from "saas_metrics"."main"."fct_subscription_events"
+where mrr_amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:08:49.066011 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m18:08:49.070051 [debug] [Thread-4 (]: On test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4: ROLLBACK
+[0m18:08:49.071459 [debug] [Thread-4 (]: On test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4: Close
+[0m18:08:49.073284 [info ] [Thread-4 (]: 12 of 13 PASS not_null_fct_subscription_events_mrr_amount ...................... [[32mPASS[0m in 0.07s]
+[0m18:08:49.075042 [debug] [Thread-4 (]: Finished running node test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4
+[0m18:08:49.125490 [debug] [Thread-3 (]: SQL status: OK in 0.445 seconds
+[0m18:08:49.134016 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.dim_customers"
+[0m18:08:49.134760 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_customers"} */
+alter table "saas_metrics"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m18:08:49.136059 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m18:08:49.139404 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: COMMIT
+[0m18:08:49.140042 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.dim_customers"
+[0m18:08:49.140648 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: COMMIT
+[0m18:08:49.146579 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m18:08:49.149008 [debug] [Thread-3 (]: Using duckdb connection "model.saas_metrics.dim_customers"
+[0m18:08:49.149452 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_customers"} */
+
+      drop table if exists "saas_metrics"."main"."dim_customers__dbt_backup" cascade
+    
+[0m18:08:49.150225 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m18:08:49.151987 [debug] [Thread-3 (]: On model.saas_metrics.dim_customers: Close
+[0m18:08:49.153036 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820433B0>]}
+[0m18:08:49.153994 [info ] [Thread-3 (]: 8 of 13 OK created sql table model main.dim_customers .......................... [[32mOK[0m in 0.51s]
+[0m18:08:49.155157 [debug] [Thread-3 (]: Finished running node model.saas_metrics.dim_customers
+[0m18:08:49.157242 [debug] [Thread-1 (]: Began running node test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632
+[0m18:08:49.158255 [info ] [Thread-1 (]: 13 of 13 START test relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m18:08:49.159469 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.saas_metrics.not_null_fct_subscription_events_customer_id.d39440d645, now test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632)
+[0m18:08:49.160901 [debug] [Thread-1 (]: Began compiling node test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632
+[0m18:08:49.160244 [debug] [Thread-2 (]: SQL status: OK in 0.400 seconds
+[0m18:08:49.177598 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.dim_feature_usage"
+[0m18:08:49.174691 [debug] [Thread-1 (]: Writing injected SQL for node "test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632"
+[0m18:08:49.178182 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_feature_usage"} */
+alter table "saas_metrics"."main"."dim_feature_usage__dbt_tmp" rename to "dim_feature_usage"
+[0m18:08:49.179340 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m18:08:49.181095 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: COMMIT
+[0m18:08:49.181565 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.dim_feature_usage"
+[0m18:08:49.182029 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: COMMIT
+[0m18:08:49.182530 [debug] [Thread-1 (]: Began executing node test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632
+[0m18:08:49.184683 [debug] [Thread-1 (]: Writing runtime sql for node "test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632"
+[0m18:08:49.186236 [debug] [Thread-1 (]: Using duckdb connection "test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632"
+[0m18:08:49.186741 [debug] [Thread-1 (]: On test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632: BEGIN
+[0m18:08:49.187128 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:49.188010 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:49.188454 [debug] [Thread-1 (]: Using duckdb connection "test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632"
+[0m18:08:49.188802 [debug] [Thread-1 (]: On test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "saas_metrics"."main"."fct_subscription_events"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "saas_metrics"."main"."dim_customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:08:49.190825 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m18:08:49.192513 [debug] [Thread-1 (]: On test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632: ROLLBACK
+[0m18:08:49.193717 [debug] [Thread-1 (]: On test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632: Close
+[0m18:08:49.194719 [info ] [Thread-1 (]: 13 of 13 PASS relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.04s]
+[0m18:08:49.196003 [debug] [Thread-1 (]: Finished running node test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632
+[0m18:08:49.218353 [debug] [Thread-2 (]: SQL status: OK in 0.035 seconds
+[0m18:08:49.219973 [debug] [Thread-2 (]: Using duckdb connection "model.saas_metrics.dim_feature_usage"
+[0m18:08:49.220328 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "saas_metrics", "target_name": "dev", "node_id": "model.saas_metrics.dim_feature_usage"} */
+
+      drop table if exists "saas_metrics"."main"."dim_feature_usage__dbt_backup" cascade
+    
+[0m18:08:49.221011 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m18:08:49.222271 [debug] [Thread-2 (]: On model.saas_metrics.dim_feature_usage: Close
+[0m18:08:49.222798 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47978ea8-ad27-4c56-adb6-e4fcba1a9cc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820E67B0>]}
+[0m18:08:49.223351 [info ] [Thread-2 (]: 9 of 13 OK created sql table model main.dim_feature_usage ...................... [[32mOK[0m in 0.48s]
+[0m18:08:49.223910 [debug] [Thread-2 (]: Finished running node model.saas_metrics.dim_feature_usage
+[0m18:08:49.225508 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:49.225957 [debug] [MainThread]: On master: BEGIN
+[0m18:08:49.226264 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:08:49.227007 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m18:08:49.227407 [debug] [MainThread]: On master: COMMIT
+[0m18:08:49.227670 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:49.227929 [debug] [MainThread]: On master: COMMIT
+[0m18:08:49.228482 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:08:49.228855 [debug] [MainThread]: On master: Close
+[0m18:08:49.229288 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:08:49.229594 [debug] [MainThread]: Connection 'create_saas_metrics_main' was properly closed.
+[0m18:08:49.229883 [debug] [MainThread]: Connection 'list_saas_metrics_main' was properly closed.
+[0m18:08:49.230172 [debug] [MainThread]: Connection 'model.saas_metrics.dim_feature_usage' was properly closed.
+[0m18:08:49.230449 [debug] [MainThread]: Connection 'model.saas_metrics.dim_customers' was properly closed.
+[0m18:08:49.230761 [debug] [MainThread]: Connection 'test.saas_metrics.not_null_fct_subscription_events_mrr_amount.827705ebc4' was properly closed.
+[0m18:08:49.231059 [debug] [MainThread]: Connection 'test.saas_metrics.relationships_fct_subscription_events_customer_id__customer_id__ref_dim_customers_.db99f30632' was properly closed.
+[0m18:08:49.231506 [info ] [MainThread]: 
+[0m18:08:49.232148 [info ] [MainThread]: Finished running 5 table models, 4 data tests, 4 view models in 0 hours 0 minutes and 2.89 seconds (2.89s).
+[0m18:08:49.236151 [debug] [MainThread]: Command end result
+[0m18:08:49.305453 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Public\data_analyst_portfolio\stars_schema\target\manifest.json
+[0m18:08:49.311489 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Public\data_analyst_portfolio\stars_schema\target\semantic_manifest.json
+[0m18:08:49.317794 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Public\data_analyst_portfolio\stars_schema\target\osi_document.json
+[0m18:08:49.326441 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Public\data_analyst_portfolio\stars_schema\target\run_results.json
+[0m18:08:49.326971 [info ] [MainThread]: 
+[0m18:08:49.327481 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:08:49.327820 [info ] [MainThread]: 
+[0m18:08:49.328183 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=13
+[0m18:08:49.329491 [debug] [MainThread]: Command `dbt build` succeeded at 18:08:49.329253 after 6.40 seconds
+[0m18:08:49.330104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D820413D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DFFD9ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D81BDBB30>]}
+[0m18:08:49.330632 [debug] [MainThread]: Flushing usage events
+[0m18:08:50.624325 [debug] [MainThread]: An error was encountered while trying to flush usage events

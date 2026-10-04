@@ -1,0 +1,7 @@
+saas_metrics:
+  outputs:
+    dev:
+      type: duckdb
+      path: saas_metrics.duckdb
+      threads: 4
+  target: dev

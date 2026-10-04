@@ -1,0 +1,12 @@
+name: 'saas_metrics'
+version: '1.0.0'
+config-version: 2
+profile: 'saas_metrics'
+model-paths: ["models"]
+clean-targets: ["target", "dbt_packages"]
+models:
+  saas_metrics:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
