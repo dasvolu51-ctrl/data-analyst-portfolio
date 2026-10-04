@@ -1,0 +1,9 @@
+[
+    {"month": "Jan", "mrr": 42000, "profit": 12000, "subscribers": 1200, "churn_rate": 2.1, "ltv": 850, "cac": 200},
+    {"month": "Feb", "mrr": 45500, "profit": 14000, "subscribers": 1350, "churn_rate": 1.9, "ltv": 870, "cac": 195},
+    {"month": "Mar", "mrr": 51000, "profit": 18000, "subscribers": 1500, "churn_rate": 1.5, "ltv": 900, "cac": 180},
+    {"month": "Apr", "mrr": 49000, "profit": 15500, "subscribers": 1420, "churn_rate": 3.2, "ltv": 860, "cac": 210},
+    {"month": "May", "mrr": 58000, "profit": 22000, "subscribers": 1780, "churn_rate": 1.2, "ltv": 950, "cac": 170},
+    {"month": "Jun", "mrr": 65000, "profit": 27000, "subscribers": 2100, "churn_rate": 1.0, "ltv": 980, "cac": 165},
+    {"month": "Jul", "mrr": 74000, "profit": 32000, "subscribers": 2450, "churn_rate": 0.8, "ltv": 1050, "cac": 150}
+]
