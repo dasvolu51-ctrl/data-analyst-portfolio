@@ -35,4 +35,4 @@ This project solves that problem by building a strict "single source of truth."
 ### Layer 4: BI Presentation Layer
 * **Frontend:** A zero-build React web application utilizing ESM and Babel Standalone.
 * **Libraries:** Tailwind CSS, Framer Motion, and Recharts.
-* **Hosting:** DuckDB aggregations are exported to static JSON, achieving 0ms latency and enabling 100% free static hosting via GitHub Pages.
+* **Hosting:** DuckDB aggregations are exported to static JSON, achieving 0ms latency and enabling 98% free static hosting via GitHub Pages.
