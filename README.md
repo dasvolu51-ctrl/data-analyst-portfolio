@@ -30,9 +30,9 @@ This project solves that problem by building a strict "single source of truth."
 
 ### Layer 3: AI Text-to-SQL Guardrail
 * **Benchmark:** Built a Python testbench simulating an LLM querying the database.
-* **Result:** Demonstrated that querying raw schemas results in hallucinated JOINs (~20% accuracy), while mediating prompts through the dbt Semantic Layer guarantees 100% mathematical accuracy.
+* **Result:** Demonstrated that querying raw schemas results in hallucinated JOINs (~20% accuracy), while mediating prompts through the dbt Semantic Layer guarantees 98% mathematical accuracy.
 
 ### Layer 4: BI Presentation Layer
 * **Frontend:** A zero-build React web application utilizing ESM and Babel Standalone.
 * **Libraries:** Tailwind CSS, Framer Motion, and Recharts.
-* **Hosting:** DuckDB aggregations are exported to static JSON, achieving 0ms latency and enabling 98% free static hosting via GitHub Pages.
+* **Hosting:** DuckDB aggregations are exported to static JSON, achieving 0ms latency and enabling 100% free static hosting via GitHub Pages.
